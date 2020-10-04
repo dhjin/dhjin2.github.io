@@ -14,7 +14,7 @@ using CUDAapi
 ### Flux 패키지 및 함수
 - Flux.Data 에서 DataLoader: 데이로 입출력을 관할
 - onehotbatch: 정수를 원핫벡터로 변환
-- onecold: 원핫벡터를 정수로 변환
+- onecold: 0-1 반전.
 - MLDatasets: 머신러닝을 위한 오픈소스 데이터세트
 - CUDAapi: GPU 사용을 위한 패키지
 
