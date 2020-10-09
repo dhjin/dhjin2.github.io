@@ -30,7 +30,7 @@ twitter_username: dhjin82
 github_username:  dhjin
 
 # Build settings
-theme: jekyll-theme-minimal
+#theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
