@@ -1,6 +1,6 @@
 ---
 layout: default
 title: Algorithms
-permalink: /Algorithms/
+permalink: /algorithm/
 ---
 Ok..
