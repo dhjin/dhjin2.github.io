@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Julia Implementation
 ---
 <ul>
   {% for post in site.posts %}
