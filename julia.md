@@ -1,6 +1,6 @@
 ---
 layout: default
 title: Julia
-permalink: /Julia/
+permalink: /julia/
 ---
 oo
