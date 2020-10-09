@@ -1,6 +1,6 @@
 ---
 layout: default
 title: Computational Linguistics
-permalink: /cl/
+permalink: /CL/
 ---
 OK, this page is for CL.
