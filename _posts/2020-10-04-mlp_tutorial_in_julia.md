@@ -1,3 +1,8 @@
+---
+layout: post
+title: Multi Layer Perceltron
+categories: [julia]
+---
 출처: https://github.com/FluxML/model-zoo/blob/master/vision/mnist/mlp.jl
 
 
