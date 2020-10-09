@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Julia
 permalink: /Julia/
 ---
 {% for tag in site.tags %}
