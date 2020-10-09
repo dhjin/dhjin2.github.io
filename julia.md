@@ -3,7 +3,6 @@ layout: default
 title: Julia
 permalink: /Julia/
 ---
-Ok..
 <ul>
   {% for post in site.posts %}
     <li>
