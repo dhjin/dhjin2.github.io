@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Julia
-permalink: /julia/
+permalink: /Julia/
 ---
+Ok..
 <ul>
   {% for post in site.posts %}
     <li>
