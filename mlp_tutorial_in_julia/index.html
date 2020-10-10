@@ -612,6 +612,24 @@ How to enable plug in works?
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> git add <span class="k">*</span> <span class="o">&amp;&amp;</span> git commit <span class="nt">-m</span> <span class="s2">"blah.."</span> <span class="o">&amp;&amp;</span> git push origin work
 </code></pre></div>    </div>
   </li>
+  <li>Build with ‘jekyll’ command
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> jekyll build
+</code></pre></div>    </div>
+  </li>
+  <li>(If you don’t have main branch’s directory) Prepare main branch’s directory and clone
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> <span class="nb">cd</span> .. 
+<span class="o">&gt;</span> git clone http://yourblog.github.io.git
+</code></pre></div>    </div>
+  </li>
+  <li>Remove all files in main branch’s root. Copy all files in work branch’s <strong>_site</strong> directory to main branch’s root
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> <span class="nb">rm</span> <span class="nt">-r</span> yourblog.github.io/<span class="k">*</span> <span class="o">&amp;&amp;</span> <span class="nb">cp</span> <span class="nt">-r</span> work.yourblog.github.io/_site/<span class="k">*</span> yourblog.github.io/ <span class="o">&amp;&amp;</span> <span class="nb">touch </span>yourblog.github.io/.nojekyll
+</code></pre></div>    </div>
+  </li>
+  <li>Commit your main branch
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> <span class="nb">cd </span>yourblog.github.io
+<span class="o">&gt;</span> git add <span class="k">*</span> <span class="o">&amp;&amp;</span> git commit <span class="nt">-m</span> <span class="s2">"blah.."</span> <span class="o">&amp;&amp;</span> git push origin main
+</code></pre></div>    </div>
+  </li>
 </ul>
 <strong><a href="https://dhjin.github.io/enable_plugins_in_jekyll/" rel="permalink"> ... Read more</a></strong></p></p>
     
