@@ -303,7 +303,3 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-header_pages:
-  - about.md
-  - cv.md
-  - publications.md
