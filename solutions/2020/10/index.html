@@ -19,7 +19,7 @@
 
 
 
-<title>Blog - dhjin</title>
+<title>Trick: Enable Plugin in jekyll - dhjin</title>
 
 
 
@@ -29,20 +29,22 @@
 
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="dhjin">
-<meta property="og:title" content="Blog">
+<meta property="og:title" content="Trick: Enable Plugin in jekyll">
 
 
-  <link rel="canonical" href="https://dhjin.github.io/blog/">
-  <meta property="og:url" content="https://dhjin.github.io/blog/">
+  <link rel="canonical" href="https://dhjin.github.io/solutions/2020/10/">
+  <meta property="og:url" content="https://dhjin.github.io/solutions/2020/10/">
 
 
+
+  <meta property="og:description" content="It’s a trickHow to enable css plug-in for github-pages?">
 
 
 
   <meta name="twitter:site" content="@2string.dh">
-  <meta name="twitter:title" content="Blog">
-  <meta name="twitter:description" content="dhjin">
-  <meta name="twitter:url" content="https://dhjin.github.io/blog/">
+  <meta name="twitter:title" content="Trick: Enable Plugin in jekyll">
+  <meta name="twitter:description" content="It’s a trickHow to enable css plug-in for github-pages?">
+  <meta name="twitter:url" content="https://dhjin.github.io/solutions/2020/10/">
 
   
     <meta name="twitter:card" content="summary">
@@ -60,6 +62,9 @@
 
 
 
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-10-10T00:00:00-07:00">
 
 
 
@@ -168,6 +173,8 @@
 
 
 
+
+
 <div id="main" role="main">
   
 
@@ -241,73 +248,132 @@
   </div>
 
 
-  <div class="archive">
-    
-      <h1 class="page__title">Blog</h1>
-    
-    
-
-
-  
-  
-    <h2 id="2020" class="archive__subtitle">2020</h2>
-    
-  
-  
-
-
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Trick: Enable Plugin in jekyll">
+    <meta itemprop="description" content="It’s a trickHow to enable css plug-in for github-pages?">
+    <meta itemprop="datePublished" content="October 10, 2020">
     
 
-    <h2 class="archive__item-title" itemprop="headline">
+    <div class="page__inner-wrap">
       
-        <a href="https://dhjin.github.io/solutions/2020/10/" rel="permalink">Trick: Enable Plugin in jekyll
-</a>
-      
-    </h2>
-
-<!--Uncomment out this section to have the read time re-included
-    
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+        <header>
+          <h1 class="page__title" itemprop="headline">Trick: Enable Plugin in jekyll
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
 
 
   
 	  less than 1 minute read
 	
 </p>
-    
--->
+          
         
-         <p class="page__date"><!--<strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Published:</strong> --> <i><time datetime="2020-10-10T00:00:00-07:00">October 10, 2020</time></i></p>
+        
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2020-10-10T00:00:00-07:00">October 10, 2020</time></p>
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <h2 id="its-a-trick">It’s a trick</h2>
+<p>How to enable css plug-in for github-pages?</p>
+
+<p><img src="/images/gitpages-error.png" alt="error screenshot" /></p>
+
+<ul>
+  <li>Let your customized jekyll blog have a work branch</li>
+  <li>Make a change at your blog</li>
+  <li>Commit as work branch
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> git add <span class="k">*</span> <span class="o">&amp;&amp;</span> git commit <span class="nt">-m</span> <span class="s2">"blah.."</span> <span class="o">&amp;&amp;</span> git push origin work
+</code></pre></div>    </div>
+  </li>
+  <li>Build with ‘jekyll’ command
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> jekyll build
+</code></pre></div>    </div>
+  </li>
+  <li>(If you don’t have main branch’s directory) Prepare main branch’s directory and clone
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> <span class="nb">cd</span> .. 
+<span class="o">&gt;</span> git clone http://yourblog.github.io.git
+</code></pre></div>    </div>
+  </li>
+  <li>Remove all files in main branch’s root. Copy all files in work branch’s <strong>_site</strong> directory to main branch’s root
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> <span class="nb">rm</span> <span class="nt">-r</span> yourblog.github.io/<span class="k">*</span> <span class="o">&amp;&amp;</span> <span class="nb">cp</span> <span class="nt">-r</span> work.yourblog.github.io/_site/<span class="k">*</span> yourblog.github.io/ <span class="o">&amp;&amp;</span> <span class="nb">touch </span>yourblog.github.io/.nojekyll
+</code></pre></div>    </div>
+  </li>
+  <li>Commit your main branch
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> <span class="nb">cd </span>yourblog.github.io
+<span class="o">&gt;</span> git add <span class="k">*</span> <span class="o">&amp;&amp;</span> git commit <span class="nt">-m</span> <span class="s2">"blah.."</span> <span class="o">&amp;&amp;</span> git push origin main
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
         
 
-    <!--The part below defines the "Read more" behavior-->
-    <!--TODO: figure out how the excerpts are defined-->
+
+
+
+      </footer>
+
+      
+
+<section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=https://dhjin.github.io/solutions/2020/10/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://dhjin.github.io/solutions/2020/10/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https://dhjin.github.io/solutions/2020/10/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://dhjin.github.io/solutions/2020/10/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+      
+
+
+  <nav class="pagination">
     
-    <p class="archive__item-excerpt" itemprop="description"><p><h2 id="its-a-trick">It’s a trick</h2>
-How to enable css plug-in for github-pages?
-<strong><a href="https://dhjin.github.io/solutions/2020/10/" rel="permalink"> ... Read more</a></strong></p></p>
+      <a href="https://dhjin.github.io/Second/" class="pagination--pager" title="Little Talks on Symbols
+">Previous</a>
     
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
 
     
-
   </article>
-</div>
-
 
   
   
-  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
 
 
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     
 
@@ -345,16 +411,14 @@ How to enable css plug-in for github-pages?
   </article>
 </div>
 
-
-  
-  
-  
+        
+          
 
 
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     
 
@@ -392,16 +456,14 @@ How to enable css plug-in for github-pages?
   </article>
 </div>
 
-
-  
-  
-  
+        
+          
 
 
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     
 
@@ -439,16 +501,14 @@ How to enable css plug-in for github-pages?
   </article>
 </div>
 
-
-  
-  
-  
+        
+          
 
 
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     
 
@@ -486,9 +546,10 @@ How to enable css plug-in for github-pages?
   </article>
 </div>
 
-
-
-  </div>
+        
+      </div>
+    </div>
+  
 </div>
 
 
