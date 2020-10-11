@@ -1,5 +1,8 @@
 ---
-title: Multi Layer Perceltron
+title: Multi Layer Perceptron
+permalink: /tutorials/2020/10
+categories: tutorial
+tags: julia
 ---
 출처: https://github.com/FluxML/model-zoo/blob/master/vision/mnist/mlp.jl
 

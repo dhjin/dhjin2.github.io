@@ -12,7 +12,7 @@ It's because github-pages doesn't support a custom theme other than native theme
 I found a good solution to this problem by [Rademaker](http://arademaker.github.io/blog/2011/12/01/github-pages-jekyll-plugins,"rademaker").
 I think making two branches is more effective way to me. 
 - First, make a **work** branch for your customized jekyll blog and clone it to some directory other than your main(or master) directory.
-- Make a change at work branch
+- Make a change at **work** branch
 - Commit as **work** branch
 ```bash
 > git add * && git commit -m "blah.." && git push origin work
