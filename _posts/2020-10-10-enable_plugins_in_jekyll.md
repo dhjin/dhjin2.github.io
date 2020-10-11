@@ -1,9 +1,13 @@
 ---
 title: "Trick: Enable Plugin in jekyll"
 date: 2020-10-10
+permalink: /solutions/2020/10/
 ---
 ## It's a trick
-How to enable plug in works?
+How to enable css plug-in for github-pages?
+
+![error screenshot](/images/gitpages-error.png)
+
 - Let your customized jekyll blog have a work branch
 - Make a change at your blog
 - Commit as work branch
