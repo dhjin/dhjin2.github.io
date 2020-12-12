@@ -3,14 +3,11 @@ main:
   - title: "Blog"
     url: /blog/
 
-  # - title: "Research"
-  #   url: /research/
+  - title: "Research"
+    url: /research/
 
   - title: "Publications"
     url: /publications/
-
-#  - title: "Talks"
-#    url: /talks/
 
 #  - title: "Teaching"
 #    url: /teaching/
@@ -21,11 +18,14 @@ main:
   - title: "CV"
     url: /cv/
 
-#  - title: "Guide"
-#    url: /markdown/
-
-  # - title: "Career"
-  #   url: /career/
-
   - title: "Tutorials"
     url: /tutorials/
+
+  - title: "Concepts"
+    url: /concepts/
+
+  - title: "Technologies"
+    url: /technologies/
+
+  - title: "Talks"
+    url: /talks/
